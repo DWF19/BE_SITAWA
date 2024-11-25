@@ -1,15 +1,15 @@
 <?php
 
-use App\Http\Controllers\api\ComplaintController;
-use App\Http\Controllers\api\ProductionController;
-use App\Http\Controllers\api\ReplyController;
-use App\Http\Controllers\AuthController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\API\ComplaintController;
+use App\Http\Controllers\API\ReplyController;
 
-Route::apiResource('/complaints', ComplaintController::class);
-Route::apiResource('/replies', ReplyController::class);
-Route::apiResource('/productions', ProductionController::class);
-Route::get('/productionsByUser/{user_id}', [ProductionController::class, 'showByUserId']);
+Route::apiResource('/complaints', App\Http\Controllers\api\ComplaintController::class);
+Route::apiResource('/replies', App\Http\Controllers\api\ReplyController::class);
+Route::apiResource('/productions', App\Http\Controllers\api\ProductionController::class);
+Route::get('/productionsByUser/{user_id}', [App\Http\Controllers\api\ProductionController::class, 'showByUserId']);
 Route::get('/repliesByComplaint/{complaint_id}', [ReplyController::class, 'showByComplaintId']);
 Route::get('/user', [AuthController::class, 'indexKecamatan']);
 

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\api;
 
-use App\Http\Controllers\Controller;
-use App\Http\Resources\ComplaintResource;
 use App\Models\Complaint;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Resources\ComplaintResource;
 use Illuminate\Support\Facades\Validator;
 
 class ComplaintController extends Controller

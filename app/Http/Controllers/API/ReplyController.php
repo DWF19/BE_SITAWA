@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
-use App\Http\Resources\ReplyResource;
 use App\Models\Reply;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\ReplyResource;
 use Illuminate\Support\Facades\Validator;
 
 class ReplyController extends Controller
@@ -70,8 +70,8 @@ class ReplyController extends Controller
         //return single reply as a resource
         return new ReplyResource(true, 'Detail Data reply!', $reply);
     }
-
-
+   
+    
     /**
      * update
      *
