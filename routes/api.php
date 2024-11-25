@@ -3,13 +3,13 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\api\ComplaintController;
-use App\Http\Controllers\api\ReplyController;
+use App\Http\Controllers\Api\ComplaintController;
+use App\Http\Controllers\Api\ReplyController;
 
-Route::apiResource('/complaints', App\Http\Controllers\api\ComplaintController::class);
-Route::apiResource('/replies', App\Http\Controllers\api\ReplyController::class);
-Route::apiResource('/productions', App\Http\Controllers\api\ProductionController::class);
-Route::get('/productionsByUser/{user_id}', [App\Http\Controllers\api\ProductionController::class, 'showByUserId']);
+Route::apiResource('/complaints', App\Http\Controllers\Api\ComplaintController::class);
+Route::apiResource('/replies', App\Http\Controllers\Api\ReplyController::class);
+Route::apiResource('/productions', App\Http\Controllers\Api\ProductionController::class);
+Route::get('/productionsByUser/{user_id}', [App\Http\Controllers\Api\ProductionController::class, 'showByUserId']);
 Route::get('/repliesByComplaint/{complaint_id}', [ReplyController::class, 'showByComplaintId']);
 Route::get('/user', [AuthController::class, 'indexKecamatan']);
 
