@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\api\ComplaintController;
+use App\Http\Controllers\api\ProductionController;
+use App\Http\Controllers\api\ReplyController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ComplaintController;
-use App\Http\Controllers\ProductionController;
-use App\Http\Controllers\ReplyController;
 use Illuminate\Support\Facades\Route;
 
 Route::apiResource('/complaints', ComplaintController::class);

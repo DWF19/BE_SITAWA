@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api;
 
+use App\Http\Controllers\Controller;
 use App\Http\Resources\ReplyResource;
 use App\Models\Reply;
 use Illuminate\Http\Request;
