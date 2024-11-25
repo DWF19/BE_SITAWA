@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers;
 
+use App\Http\Resources\ReplyResource;
 use App\Models\Reply;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Resources\ReplyResource;
 use Illuminate\Support\Facades\Validator;
 
 class ReplyController extends Controller
