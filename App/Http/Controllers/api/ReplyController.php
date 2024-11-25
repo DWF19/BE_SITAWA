@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\api;
 
 use App\Models\Reply;
 use Illuminate\Http\Request;
@@ -70,8 +70,8 @@ class ReplyController extends Controller
         //return single reply as a resource
         return new ReplyResource(true, 'Detail Data reply!', $reply);
     }
-   
-    
+
+
     /**
      * update
      *

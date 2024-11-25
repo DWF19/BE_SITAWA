@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\Api\ComplaintController;
-use App\Http\Controllers\Api\ProductionController;
-use App\Http\Controllers\Api\ReplyController;
+use App\Http\Controllers\api\ComplaintController;
+use App\Http\Controllers\api\ProductionController;
+use App\Http\Controllers\api\ReplyController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
