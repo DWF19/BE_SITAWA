@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\api;
 
 use App\Models\Reply;
 use Illuminate\Http\Request;
