@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\API\ComplaintController;
-use App\Http\Controllers\API\ReplyController;
+use App\Http\Controllers\api\ComplaintController;
+use App\Http\Controllers\api\ReplyController;
 
 Route::apiResource('/complaints', App\Http\Controllers\api\ComplaintController::class);
 Route::apiResource('/replies', App\Http\Controllers\api\ReplyController::class);

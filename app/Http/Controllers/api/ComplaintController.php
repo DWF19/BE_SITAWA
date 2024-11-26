@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Models\Complaint;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
@@ -14,9 +15,9 @@ class ComplaintController extends Controller
     /**
      * index
      *
-     * @return void
+     * @return ComplaintResource
      */
-    public function index()
+    public function index(): ComplaintResource
     {
         //get all complaint
         $complaint = Complaint::all();
@@ -29,7 +30,7 @@ class ComplaintController extends Controller
      * store
      *
      * @param  mixed $request
-     * @return void
+     * @return JsonResponse
      */
     public function store(Request $request)
     {
